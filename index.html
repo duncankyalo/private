@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tenant  - Your Property</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="E:/pictures/logo.jpg" alt="App Logo" class="logo"> 
+            <nav>
+                <a href="#" data-target="home">Home</a>
+                <a href="#" data-target="profile">My Profile</a>
+                <a href="#" data-target="maintenance">Maintenance Requests</a>
+                <a href="#" data-target="payments">Payment History</a>
+                <a href="#" data-target="contact">Contact Landlord</a>
+                <a href="#" data-target="logout">Logout</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="home" class="page">
+            <h2>Welcome, [Tenant Name]!</h2>
+            <img src="E:/pictures/profile.jpg" alt="Profile Picture" class="profile-pic">
+            <p>Property: [Property Address]</p>
+        </section>
+
+        <section id="profile" class="page">
+            <h2>My Profile</h2>
+            <div class="profile-info">
+                <img src="E:/pictures/profile.jpg" alt="Profile Picture" class="profile-pic">
+                <div>
+                    <h3>[Tenant Name]</h3>
+                    <p>Email: [Tenant Email]</p>
+                    <p>Phone: [Tenant Phone Number]</p>
+                    <p>Property: [Property Address]</p>
+                </div>
+            </div>
+        
+            <form id="editProfileForm">
+                <h3>Edit Profile</h3>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" value="[Tenant Name]" required>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" value="[Tenant Email]" required>
+        
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" value="[Tenant Phone Number]" placeholder="XXX-XXX-XXXX" required>
+        
+                <button type="submit">Save Changes</button>
+            </form>
+        </section>
+
+        <section id="maintenance" class="page">
+            <h2>Submit a Maintenance Request</h2>
+        
+            <div class="request-details">
+                <h3>Request Details</h3>
+                <form id="maintenanceForm">
+                    <label for="property">Choose Property:</label>
+                    <select id="property" name="property" required>
+                        <option value="">Select a Property</option>
+                        <!-- Populate property options dynamically -->
+                    </select>
+        
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="description" rows="5" required></textarea>
+        
+                    <label for="location">Location:</label>
+                    <input type="text" id="location" name="location" required>
+        
+                    <label for="priority">Priority:</label>
+                    <select id="priority" name="priority" required>
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+        
+                    <label for="image">Upload Image (Optional):</label>
+                    <input type="file" id="image" name="image" accept="image/*"> 
+        
+                    <button type="submit">Submit Request</button>
+                </form>
+            </div>
+        
+            <div class="request-status">
+                <h3>Recent Requests</h3>
+                <ul id="requestList">
+                    <!-- Dynamically load recent requests here -->
+                </ul>
+            </div>
+        </section>
+
+        <section id="payments" class="page">
+            <h2>Payment History</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Amount</th>
+                        <th>Description</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Example payment history rows (replace with dynamic data) -->
+                    <tr>
+                        <td>2024-03-15</td>
+                        <td>$1,200</td>
+                        <td>March Rent Payment</td>
+                        <td>Paid</td>
+                    </tr>
+                    <tr>
+                        <td>2024-02-15</td>
+                        <td>$1,200</td>
+                        <td>February Rent Payment</td>
+                        <td>Paid</td>
+                    </tr>
+                    <tr>
+                        <td>2024-01-15</td>
+                        <td>$1,200</td>
+                        <td>January Rent Payment</td>
+                        <td>Paid</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contact" class="page">
+            <h2>Contact Landlord</h2>
+            <form id="contactForm">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+        
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="phone">Your Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="XXX-XXX-XXXX"> 
+        
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+        
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <section id="logout" class="page">
+            <h2>Logging Out...</h2>
+            <p>Please wait while we log you out.</p>
+            <p>You will be redirected to the login page shortly.  <a href="/login">Click here if you are not automatically redirected.</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Your Property App</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+/* Basic Styling (add more styles as needed) */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("E:\pictures/background.jpg"); /* Add your background image here */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #0b0505; /* Or choose a contrasting color */
+}
+header {
+    background-color: rgba(0, 0, 0, 0.5); /* Add semi-transparent black background to header */
+    color: #fff;
+    padding: 10px 0;
+}
+.container {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center; /* Center align content within the container */
+}
+nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+.profile {
+    margin-bottom: 20px;
+}
+.logo {
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+    margin-bottom: 10px; /* Space between logo and nav */
+}
+.profile-pic {
+    width: 150px; 
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #fff; /* Add a white border */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+}
+.maintenance form {
+    width: 80%; /* Adjust the form width */
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background */
+    padding: 20px;
+    border-radius: 5px;
+}
+.maintenance label {
+    display: block;
+    margin-top: 10px;
+    color: #333; /* Make labels darker for better contrast */
+}
+.maintenance input, .maintenance textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    color: #333; /* Make input text darker for better contrast */
+}
+.maintenance button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 0;
+}
+
+.page {
+    display: none;  /* Initially hide all sections */
+  }
+  
+  .page.active {
+    display: block;  /* Make the active section visible */
+  }
+
+.request-details form {
+    /* ... Other form styles ... */
+    display: flex;
+    flex-direction: column; /* Arrange form elements vertically */
+}
+
+.request-details label {
+    margin-bottom: 5px; /* Add space below labels */
+}
+
+.request-details input,
+.request-details textarea,
+.request-details select {
+    margin-bottom: 10px; /* Add space below input fields */
+}
+
+/* ... (Your existing CSS styles) ... */
+
+#contact form {
+    /* ... Other form styles ... */
+    display: flex;
+    flex-direction: column; /* Arrange form elements vertically */
+}
+
+#contact label {
+    margin-bottom: 5px; /* Add space below labels */
+}
+
+#contact input,
+#contact textarea,
+#contact select {
+    margin-bottom: 10px; /* Add space below input fields */
+}
